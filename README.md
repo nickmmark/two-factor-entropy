@@ -53,6 +53,13 @@ OK not to be dissuaded easily, let's try this for a different 2FA generator.
 
 This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness! I did some additional research on this and it turns out that [Google deliberately avoids certain strings of numbers in it 2FA app](https://www.wired.com/story/2fa-randomness/)! They presumably generate truly random sequences but 'roll the dice' again if certain hard to remember sequences are generated.
 
+## experiment 3 - ?
+
+
+## next steps
+[ ] I need to find more sets of 2FA codes, to see if other companies use pseudo-randomness
+[ ] I need to find another technique that can identify the low entropy of ascending/descending sequences
+
 
 ## references:
 * Miller, George A. (1956). [The magical number seven, plus or minus two: Some limits on our capacity for processing information.](http://psychclassics.yorku.ca/Miller/) Psychological Review.
