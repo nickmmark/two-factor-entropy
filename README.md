@@ -26,6 +26,13 @@ If a 2FA token is truly random, we would expect it to have higher Shanon Entropy
 
 ## results
 
+### experiment 1 -
+I used the 35 most recent 2FA codes for my work outlook account and compared against 10,000 randomnly generated 6 digit codes
+
+| Category  | n |  mean entropy | SD entropy |
+| ----- | ------ | ------ | ------ |
+| 2FA  | 35  |2.072721 | 0.3163435 |
+| Random  | 10000  | 2.124127	| 0.3102022 |
 
 
 ## references:
