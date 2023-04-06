@@ -58,6 +58,7 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 
 # approach 2 - Kolmogorov complexity
 `Shannon Entropy` can tell us how random the numbers in a sequence are, but we need a different tool to quantify the complexity of the sequence itself.
+`Kolmogorov Complexity` (or Algorithmic complexity) defines the information content of an object by shortess program capable of computing a representation of it. Thus a linear seqence (123456) would have much lower Kolmogorov Complexity than a random sequence (624315), even though these two sequences have identical Shannon entropy.
 
 
 
