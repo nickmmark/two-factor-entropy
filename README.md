@@ -30,16 +30,26 @@ One limitation of this approach, is that Shanon entropy regards each symbol as d
 
 ## results
 
-### experiment 1 -
-I used the 35 most recent 2FA codes from my work outlook account and compared against 10,000 randomnly generated 6 digit codes
+### experiment 1 - Microsoft 2FA
+I used the 35 most recent 2FA codes from my work Microsoft account and compared against 10,000 randomnly generated 6 digit codes
 
 | Category  | n |  mean entropy | SD entropy |
 | ----- | ------ | ------ | ------ |
-| 2FA  | 35  |2.072721 | 0.3163435 |
-| Random  | 10000  | 2.124127	| 0.3102022 |
+| Outlook 2FA  | 35  |2.072721 | 0.3163435 |
+| Random 6-digt | 10000  | 2.124127	| 0.3102022 |
 
 I compared these two groups using a Welch two sample t-test, and calculated `p-value = 0.4143`
-Conclusion: this is not a significant difference
+Conclusion: this is not a significant difference, maybe I'm wrong.
+
+### experiment 2 - Google 2FA
+OK not to be dissuaded easily, let's try this for a different 2FA generator.
+
+| Category  | n |  mean entropy | SD entropy |
+| ----- | ------ | ------ | ------ |
+| Google 2FA  | 44  | 2.012759 | 0.2660723 |
+| Random 6-digit | 10000  | 2.121891	| 0.3058093 |
+
+This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness!
 
 
 ## references:
