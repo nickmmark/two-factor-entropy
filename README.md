@@ -34,7 +34,7 @@ I used the 35 most recent 2FA codes from my work outlook account and compared ag
 | 2FA  | 35  |2.072721 | 0.3163435 |
 | Random  | 10000  | 2.124127	| 0.3102022 |
 
-I compared these two groups using a Welch two sample t-test, and calculated 'p-value = 0.4143'
+I compared these two groups using a Welch two sample t-test, and calculated `p-value = 0.4143`
 Conclusion: this is not a significant difference
 
 
