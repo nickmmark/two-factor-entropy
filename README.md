@@ -7,7 +7,7 @@ Either a random or pseudo-random number could be used. While a truly random numb
 
 An average person can hold a set of about 7 ± 2 digits in his/her working memory at any given time. This is called the `The Magical Number Seven, Plus or Minus Two Rule` or simply [Miller's Rule](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two). According to Miller's Rule a significant minority of people will struggle to recall a 6 digit code, and a majority will be unable to recall an 8 digit code.
 
-Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomness (such as containing 3 more of the same digit XAAA-BBBX, repeating patterns ABAB-XXXX or ABXX-ABXX). The human brain is highly skilled at discerning patterns, even when none actually exist. Therefore I decided to analyze 2FA tokens using Shannon Entropy to see if they consistently exhibit less than expected randomness.
+Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomness (such as containing 3 more of the same digit XAAA-BBBX, repeating patterns ABAB-XXXX or ABXX-ABXX, or palindromes ABC-CBA). This is interesting, however, the human brain is highly skilled at discerning patterns, even when none actually exist. Therefore I decided to systematically analyze 2FA tokens using Shannon Entropy to see if they consistently exhibit less than expected randomness.
 
 
 ## approach
