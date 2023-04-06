@@ -12,11 +12,13 @@ Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomne
 
 ## approach
 
-`Shanon's entropy` is a measure of the information content of a string. It can be interpreted as the number of bits required to encode each character of the string given perfect compression.
+`Shannon entropy` is a measure of the information content of a string. It can be interpreted as the number of bits required to encode each character of the string given perfect compression.
 
-![image](https://user-images.githubusercontent.com/48685552/230446281-ded2f548-cb7f-476e-9f8d-25d2d788ad8a.png)
+![image](https://user-images.githubusercontent.com/48685552/230494652-9c259742-6bc5-4ca4-9d0a-f4e4180c47e0.png)
 
-If a 2FA token is truly random, we would expect it to have higher Shanon Entropy than if is was generated pseudo-randomly (or if it was non-random). We can compare the Shanon Entropy of an array of actual 2FA codes with an array that we generate randomly, using the following approach:
+
+
+If a 2FA token is truly random, we would expect it to have higher Shanon Entropy than if is was generated pseudo-randomly (or if it was non-random). We can compare the Shannon Entropy of an array of actual 2FA codes with an array that we generate randomly, using the following approach:
 
 ![2FA_entropy](https://user-images.githubusercontent.com/48685552/230439251-1d4c4ff9-8e06-4cf2-a69f-c5576138ca71.png)
 
@@ -25,7 +27,7 @@ If a 2FA token is truly random, we would expect it to have higher Shanon Entropy
 3. calcualte the mean entropy (and standard deviation) for the group of values
 4. compare the two groups to determine if it is statistically likely be random
 
-One limitation of this approach, is that Shanon entropy regards each symbol as discreet and does not account for their sequence in the alphabet. For example an obviously non-random sequence like `123456` has a Shanon entropy of 2.5849 (the highest possible for a 6 digit number). This means that Shanon entropy may not capture all the patterns of non-randomness that could be present in a 2FA code.
+One limitation of this approach, is that Shannon entropy regards each symbol as discreet and does not account for their sequence in the alphabet. For example an obviously non-random sequence like `123456` has a Shannon entropy of 2.5849 (the highest possible for a 6 digit number). This means that Shannon entropy may not capture all the patterns of non-randomness that could be present in a 2FA code.
 
 
 ## results
