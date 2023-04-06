@@ -9,6 +9,7 @@ An average person can hold a set of about 7 ± 2 digits in his/her working memor
 
 Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomness (such as containing 3 more of the same digit XAAA-BBBX, repeating patterns ABAB-XXXX or ABXX-ABXX). The human brain is highly skilled at discerning patterns, even when none actually exist. Therefore I decided to analyze 2FA tokens using Shannon Entropy to see if they consistently exhibit less than expected randomness.
 
+
 ## approach
 
 Shanon's entropy is a measure of the information content of a string. It can be interpreted as the number of bits required to encode each character of the string given perfect compression.
@@ -21,6 +22,10 @@ If a 2FA token is truly random, we would expect it to have higher Shanon Entropy
 2. calculate the shanon entropy of each
 3. calcualte the mean entropy (and standard deviation) for the group of values
 4. compare the two groups to determine if it is statistically likely be random
+
+
+## results
+
 
 
 ## references:
