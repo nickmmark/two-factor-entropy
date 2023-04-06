@@ -49,7 +49,7 @@ OK not to be dissuaded easily, let's try this for a different 2FA generator.
 | Google 2FA  | 44  | 2.012759 | 0.2660723 |
 | Random 6-digit | 10000  | 2.121891	| 0.3058093 |
 
-This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness!
+This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness! I did some additional research on this and it turns out that [Google deliberately avoids certain strings of numbers in it 2FA app](https://www.wired.com/story/2fa-randomness/)! They presumably generate truly random sequences but 'roll the dice' again if certain hard to remember sequences are generated.
 
 
 ## references:
