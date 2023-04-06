@@ -15,8 +15,7 @@ Shanon's entropy is a measure of the information content of a string. It can be 
 
 If a 2FA token is truly random, we would expect it to have higher Shanon Entropy than if is was generated pseudo-randomly (or was non-random).
 
-
-
+![2FA_entropy](https://user-images.githubusercontent.com/48685552/230439251-1d4c4ff9-8e06-4cf2-a69f-c5576138ca71.png)
 
 
 ## references:
