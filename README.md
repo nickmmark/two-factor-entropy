@@ -1,11 +1,11 @@
 # are 2FA tokens truly random?
 
 ## background
-Two facto authentication (2FA) is a widely used tool for added security in addition to a secure password. A [Time based One-time Password](https://www.rfc-editor.org/rfc/rfc6238) (TOTP) algorithm generates a 6-8 digit code, which is shared either via SMS, email, phone, and a specialized app. Users have 30-60 seconds to receive, remember, and enter the code to login.
+`Two factor authentication` (2FA) is a widely used tool for added security in addition to a secure password. A [Time based One-time Password](https://www.rfc-editor.org/rfc/rfc6238) (TOTP) algorithm generates a 6-8 digit code, which is shared either via SMS, email, phone, and a specialized app. Users have 30-60 seconds to receive, remember, and enter the code to login.
 
 Either a random or pseudo-random number could be used. While a truly random number theoretically provides greater security, a pseudo-random (or non-random) number would be easier to remember. In principle, a pseudo-random number could provide a balance of security and be easier to remember.
 
-An average person can hold a set of about 7 ± 2 digits in his/her working memory at any given time. This means that a significant minority of people will struggle to recall a 6 digit code, and most will be unable to recally an 8 digit code.
+An average person can hold a set of about 7 ± 2 digits in his/her working memory at any given time. This is called the `The Magical Number Seven, Plus or Minus Two Rule` or simply [Miller's Rule](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two). According to Miller's Rule a significant minority of people will struggle to recall a 6 digit code, and a majority will be unable to recall an 8 digit code.
 
 Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomness (such as containing 3 more of the same digit XAAA-BBBX, repeating patterns ABAB-XXXX or ABXX-ABXX). The human brain is highly skilled at discerning patterns, even when none actually exist. Therefore I decided to analyze 2FA tokens using Shannon Entropy to see if they consistently exhibit less than expected randomness.
 
