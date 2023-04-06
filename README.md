@@ -58,7 +58,7 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 
 ## next steps
 [ ] I need to find more sets of 2FA codes, to see if other companies use pseudo-randomness
-[ ] I need to find another technique that can identify the low entropy of ascending/descending sequences
+[ ] I need to adjust my methods to find the entropy of an ordered seqence of numbers (this should capture patterns & ascending/descending sequences)
 
 
 ## references:
