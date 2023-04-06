@@ -34,6 +34,8 @@ I used the 35 most recent 2FA codes for my work outlook account and compared aga
 | 2FA  | 35  |2.072721 | 0.3163435 |
 | Random  | 10000  | 2.124127	| 0.3102022 |
 
+I compared these two groups using a two-tailed t-test
+
 
 ## references:
 * Miller, George A. (1956). [The magical number seven, plus or minus two: Some limits on our capacity for processing information.](http://psychclassics.yorku.ca/Miller/) Psychological Review.
