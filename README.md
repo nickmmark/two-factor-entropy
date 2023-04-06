@@ -13,9 +13,14 @@ Anecdotally, I have noticed that 2FA codes often exhibit patters of non-randomne
 
 Shanon's entropy is a measure of the information content of a string. It can be interpreted as the number of bits required to encode each character of the string given perfect compression.
 
-If a 2FA token is truly random, we would expect it to have higher Shanon Entropy than if is was generated pseudo-randomly (or was non-random).
+If a 2FA token is truly random, we would expect it to have higher Shanon Entropy than if is was generated pseudo-randomly (or was non-random). We can compare the Shanon Entropy of an array of actual 2FA codes with an array that we generate randomly, using the following approach:
 
 ![2FA_entropy](https://user-images.githubusercontent.com/48685552/230439251-1d4c4ff9-8e06-4cf2-a69f-c5576138ca71.png)
+
+1. generate random 6 digit codes
+2. calculate the shanon entropy of each
+3. calcualte the mean entropy (and standard deviation) for the group of values
+4. compare the two groups to determine if it is statistically likely be random
 
 
 ## references:
