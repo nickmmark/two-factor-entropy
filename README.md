@@ -60,6 +60,18 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 `Shannon Entropy` can tell us how random the numbers in a sequence are, but we need a different tool to quantify the complexity of the sequence itself.
 `Kolmogorov Complexity` (or Algorithmic complexity) defines the information content of an object by shortess program capable of computing a representation of it. Thus a linear seqence (123456) would have much lower Kolmogorov Complexity than a random sequence (624315), even though these two sequences have identical Shannon entropy.
 
+Kolmogorov complexity is calculated using the shortest algorithm that can reproduce the desired sequence. This is performed using the `Coding Theorum Method`. Practically, this is done by loading a set of algorithms and seeing which can reproduce the desired string. The longer the code required to describe the algorithm, the greater the Kolmogorov complexity.
+
+I tried this using the `acss` package in R. As before I created a large set of truly random strings and compared their Kolmogorov complexity to strings produced as 2FA tokens.
+
+## results
+
+| Category  | n |  K1 | K2 |
+| ----- | ------ | ------ | ------ |
+| Google 2FA  | 44  | 24.23574  | 5.061905e-08 |
+| Random 6-digit | 1000  | 24.66229 	| 3.766267e-08 |
+
+Comparing K1, again using a Welch T-test, I get `p-value = 0.01302`
 
 
 ## next steps
