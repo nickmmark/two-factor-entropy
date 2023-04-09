@@ -58,6 +58,7 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 | ----- | ------ | ------ | ------ |
 | BoA 2FA  | 24  | 2.004438 | 0.2647855 |
 | Random 6-digit | 10000  | 2.12225	| 0.3096388 |
+
 This time the `p-value = 0.04` again suggesting less than total randomness!
 
 ## experiment 4 - Chase 2FA
@@ -67,6 +68,7 @@ Despite this my sample size is really small, so it's not quire significant (`p-v
 | ----- | ------ | ------ | ------ |
 | Chase 2FA  | 8  | 2.287349 | 0.3495975 |
 | Random 8-digit | 10000  | 2.363308 | 0.2886808 |
+
 Clearly I need to sign in to this more and accumulate more 2FA tokens! It also shows the limitation of this technique. 
 
 
