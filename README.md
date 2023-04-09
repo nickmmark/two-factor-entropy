@@ -62,7 +62,10 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 
 Kolmogorov complexity is calculated using the shortest algorithm that can reproduce the desired sequence. This is performed using the `Coding Theorum Method`. Practically, this is done by loading a set of algorithms and seeing which can reproduce the desired string. The longer the code required to describe the algorithm, the greater the Kolmogorov complexity.
 
-I tried this using the `acss` package in R. As before I created a large set of truly random strings and compared their Kolmogorov complexity to strings produced as 2FA tokens.
+I tried this using the `acss` package in R. This package accesses a database containing data on 4.5 million strings from length 1 to 12 simulated on TMs with 2, 4, 5, 6, and 9 symbols. Normally we would need 10 symbols for base 10, but because we are using 6-8 digit 2FA tokens we only at most 8 symbols.
+
+As before I created a large set of truly random strings and compared their Kolmogorov complexity to strings produced as 2FA tokens.
+
 
 ## results
 
@@ -72,11 +75,12 @@ I tried this using the `acss` package in R. As before I created a large set of t
 | Random 6-digit | 1000  | 24.66229 	| 3.766267e-08 |
 
 Comparing K1, again using a Welch T-test, I get `p-value = 0.01302`
+Again this suggests that the 2FA tokens produced by google are not fully random.
 
 
 ## next steps
 [ ] I need to find more sets of 2FA codes, to see if other companies use pseudo-randomness
-[ ] Figure out how to use Kolmogorov complexity
+[x] Figure out how to use Kolmogorov complexity
 
 
 ## references:
@@ -86,3 +90,4 @@ Comparing K1, again using a Welch T-test, I get `p-value = 0.01302`
 * Internet Engineering Task Force (2011) [TOTP: Time-Based One-Time Password Algorithm](https://www.rfc-editor.org/rfc/rfc6238)
 * A. N. Kolmogorov. (1965) Three approaches to the quantitative definition of information. Problems of Information and Transmission, 1(1):1--7
 * G. J. (1966) Chaitin. On the length of programs for computing finite binary sequences.Journal of the ACM, 13(4):547--569
+* Gauvrit, N., Singmann, H., Soler-Toscano, F., & Zenil, H. (2014). [Algorithmic complexity for psychology: A user-friendly implementation of the coding theorem method](https://arxiv.org/abs/1409.4080). arXiv:1409.4080
