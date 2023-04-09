@@ -30,8 +30,6 @@ If a 2FA token is truly random, we would expect it to have higher Shanon Entropy
 One limitation of this approach, is that Shannon entropy regards each symbol as discreet and does not account for their sequence in the alphabet. For example an obviously non-random sequence like `123456` has a Shannon entropy of 2.5849 (the highest possible for a 6 digit number). This means that Shannon entropy may not capture all the patterns of non-randomness that could be present in a 2FA code.
 
 
-## results
-
 ### experiment 1 - Microsoft 2FA
 I used the 35 most recent 2FA codes from my work Microsoft account and compared against 10,000 randomnly generated 6 digit codes
 
@@ -53,7 +51,7 @@ OK not to be dissuaded easily, let's try this for a different 2FA generator.
 
 This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness! I did some additional research on this and it turns out that [Google deliberately avoids certain strings of numbers in it 2FA app](https://www.wired.com/story/2fa-randomness/)! They presumably generate truly random sequences but 'roll the dice' again if certain hard to remember sequences are generated.
 
-## experiment 3 - BoA 2FA
+### experiment 3 - BoA 2FA
 | Category  | n |  mean entropy | SD entropy |
 | ----- | ------ | ------ | ------ |
 | BoA 2FA  | 24  | 2.004438 | 0.2647855 |
@@ -61,7 +59,7 @@ This time I get a `p-value = 0.009521` which is suggestive that there is less th
 
 This time the `p-value = 0.04` again suggesting less than total randomness!
 
-## experiment 4 - Chase 2FA
+### experiment 4 - Chase 2FA
 Of this one deserves special mention. This is one of the few 10 digit 2FA codes. It's also so obviously non-random: every code starts with the 4!
 Despite this my sample size is really small, so it's not quire significant (`p-value = 0.5427`):
 | Category  | n |  mean entropy | SD entropy |
@@ -83,7 +81,7 @@ I tried this using the `acss` package in R. This package accesses a database con
 As before I created a large set of truly random strings and compared their Kolmogorov complexity to strings produced as 2FA tokens.
 
 
-## results
+### experiment 1 - Google 2FA
 
 | Category  | n |  K1 | K2 |
 | ----- | ------ | ------ | ------ |
@@ -94,7 +92,7 @@ Comparing K1, again using a Welch T-test, I get `p-value = 0.01302`
 Again this suggests that the 2FA tokens produced by google are not fully random.
 
 
-## conclusion
+# conclusion
 While a small n study like this is hardly conclusive, it certainly suggests that my suspicions are right: not all 2FA tokens are not truly random. This is likely to strike a balance between security and memorability. Interestingly, this was only true for Google (not Microsoft) suggesting that some companies generate or prune 2FA codes. 
 
 
