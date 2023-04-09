@@ -78,6 +78,10 @@ Comparing K1, again using a Welch T-test, I get `p-value = 0.01302`
 Again this suggests that the 2FA tokens produced by google are not fully random.
 
 
+## conclusion
+While a small n study like this is hardly conclusive, it certainly suggests that my suspicions are right: not all 2FA tokens are not truly random. This is likely to strike a balance between security and memorability. Interestingly, this was only true for Google (not Microsoft) suggesting that some companies generate or prune 2FA codes. 
+
+
 ## next steps
 [ ] I need to find more sets of 2FA codes, to see if other companies use pseudo-randomness
 [x] Figure out how to use Kolmogorov complexity
