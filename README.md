@@ -86,8 +86,7 @@ Again this suggests that the 2FA tokens produced by google are not fully random.
 ## references:
 * Miller, George A. (1956). [The magical number seven, plus or minus two: Some limits on our capacity for processing information.](http://psychclassics.yorku.ca/Miller/) Psychological Review.
 * Shannon, Claude E. (July/October 1948). [A Mathematical Theory of Communication, Bell System Technical Journal 27](https://www3.nd.edu/~powers/ame.20231/shannon1948a.pdf) (3): 379-423.
-* Ihara, Shunsuke (1993) Information theory for continuous systems, World Scientific. p. 2. ISBN 978-981-02-0985-8.
 * Internet Engineering Task Force (2011) [TOTP: Time-Based One-Time Password Algorithm](https://www.rfc-editor.org/rfc/rfc6238)
-* A. N. Kolmogorov. (1965) Three approaches to the quantitative definition of information. Problems of Information and Transmission, 1(1):1--7
-* G. J. (1966) Chaitin. On the length of programs for computing finite binary sequences.Journal of the ACM, 13(4):547--569
+* A. N. Kolmogorov. (1965) [Three approaches to the quantitative definition of information](http://alexander.shen.free.fr/library/Kolmogorov65_Three-Approaches-to-Information.pdf). Problems of Information and Transmission, 1(1):1--7
+* G. J. (1966) Chaitin. [On the length of programs for computing finite binary sequences](https://dl.acm.org/doi/abs/10.1145/321356.321363). Journal of the ACM, 13(4):547--569
 * Gauvrit, N., Singmann, H., Soler-Toscano, F., & Zenil, H. (2014). [Algorithmic complexity for psychology: A user-friendly implementation of the coding theorem method](https://arxiv.org/abs/1409.4080). arXiv:1409.4080
