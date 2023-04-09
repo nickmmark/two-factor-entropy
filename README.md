@@ -53,7 +53,21 @@ OK not to be dissuaded easily, let's try this for a different 2FA generator.
 
 This time I get a `p-value = 0.009521` which is suggestive that there is less than total randomness! I did some additional research on this and it turns out that [Google deliberately avoids certain strings of numbers in it 2FA app](https://www.wired.com/story/2fa-randomness/)! They presumably generate truly random sequences but 'roll the dice' again if certain hard to remember sequences are generated.
 
-## experiment 3 - ?
+## experiment 3 - BoA 2FA
+| Category  | n |  mean entropy | SD entropy |
+| ----- | ------ | ------ | ------ |
+| BoA 2FA  | 24  | 2.004438 | 0.2647855 |
+| Random 6-digit | 10000  | 2.12225	| 0.3096388 |
+This time the `p-value = 0.04` again suggesting less than total randomness!
+
+## experiment 4 - Chase 2FA
+Of this one deserves special mention. This is one of the few 10 digit 2FA codes. It's also so obviously non-random: every code starts with the 4!
+Despite this my sample size is really small, so it's not quire significant (`p-value = 0.5427`):
+| Category  | n |  mean entropy | SD entropy |
+| ----- | ------ | ------ | ------ |
+| Chase 2FA  | 8  | 2.287349 | 0.3495975 |
+| Random 8-digit | 10000  | 2.363308 | 0.2886808 |
+Clearly I need to sign in to this more and accumulate more 2FA tokens! It also shows the limitation of this technique. 
 
 
 # approach 2 - Kolmogorov and Levin Complexity
