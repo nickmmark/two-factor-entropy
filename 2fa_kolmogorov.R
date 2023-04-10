@@ -1,3 +1,6 @@
+## kolmogorov complexity of random vs 2FA strings
+## nick mark 2023
+
 ## part 1: calculate the Kolmogorov complexity of an array of random numbers
 
 #library(stringdist)
@@ -29,6 +32,8 @@ library(accs)
 # load the 2FA values into an array
 #x <- as.matrix(c(123456, 314265))
 x <- as.matrix(c(654665, 228258, 018589, 318108, 496465, 966409, 276292, 872798, 790606, 225880, 384753, 380566, 033805, 767658, 902493, 808720, 491476, 852434, 763824, 535193, 791198, 358267, 856442, 702500, 956261, 906910, 010452, 295959, 588784, 748264, 575990, 008650, 044167, 118292, 515368, 672483, 173786, 993161, 542175, 835775, 856056, 974347, 106009, 118917))
+
+#x <- as.matrix(c(46392603, 40272363, 48888807, 46947679, 47521146, 42506403, 40570211, 42080128))
 
 
 # convert the array to a character matrix
